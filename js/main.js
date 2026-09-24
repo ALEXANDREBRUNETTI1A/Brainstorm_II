@@ -1,3 +1,8 @@
+<script type="module" src=”js/aleatorio.js”></script>
+<script type="module" src=”js/perguntas.js”></script>
+<script type="module" src=”js/script.js”></script>
+
+
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
