@@ -57,9 +57,12 @@ caixaResultado.classList.add("mostrar"); botaoJogarNovamente.addEventListener("c
 
 }
 
-function jogaNovamente(){
-    atual = 0;
-    historiaFinal = "";
-    mostraPergunta();
+function jogaNovamente() {
+atual = 0;
+historiaFinal = "";
+caixaResultado.classList.remove("mostrar");
+mostraPergunta();
+}
+
 
 mostraPergunta();
