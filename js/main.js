@@ -1,3 +1,5 @@
+import {aleatorio, nome} from './aleatorio.js';
+
 <script type=”module” src=”js/aleatorio.js”></script>
 <script type=”module” src=”js/perguntas.js”></script>
 <script type=”module” src=”js/script.js”></script>
@@ -64,5 +66,22 @@ caixaResultado.classList.remove("mostrar");
 mostraPergunta();
 }
 
+function substituiNome(){
+for(const pergunta of perguntas){
+pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
+    }
+}
+
+function respostaSelecionada(opcaoSelecionada) { 
+
+  const afirmacoes = aleatorio(opcaoSelecionada.afirmacao); 
+
+  historiaFinal += afirmacoes + " "; 
+
+ 
+
+  mostraPergunta(); 
+
+} 
 
 mostraPergunta();
