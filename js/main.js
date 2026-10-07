@@ -36,6 +36,29 @@ function mostraAlternativas(){
     }
 }
 
+function respostaSelecionada(opcaoSelecionada) { 
+
+  const afirmacoes = aleatorio(opcaoSelecionada.afirmacao); 
+
+  historiaFinal += afirmacoes + " "; 
+
+  if (opcaoSelecionada.proxima !== undefined) { 
+
+    atual = opcaoSelecionada.proxima; 
+
+  } else { 
+
+    mostraResultado(); 
+
+    return; 
+
+  } 
+
+  mostraPergunta(); 
+
+} 
+
+
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
 historiaFinal += afirmacoes + " ";
