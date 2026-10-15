@@ -1,6 +1,4 @@
 import {aleatorio, nome} from './aleatorio.js';
-
-<script type=”module” src=”js/aleatorio.js”></script>
 <script type=”module” src=”js/perguntas.js”></script>
 <script type=”module” src=”js/script.js”></script>
 
